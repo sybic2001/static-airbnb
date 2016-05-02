@@ -1,0 +1,46 @@
+<% flat = data.flats[owner] %>
+<div class="wrapper-picture padded" style="background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)), url(<%= image_path(flat.picture)%>);">
+</div>
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-6">
+        <div class="flat-summary">
+          <div class="flat-owner text-center">
+            <%= image_tag flat.owner_picture, class: "avatar-very-large" %>
+            <p><%= flat.owner_name %></p>
+          </div>
+          <div class="flat-details">
+            <h1><%= flat.summary %></h1>
+            <p><%= flat.city %></p>
+            <% flat.rating.to_i.times do %>
+              <i class="fa fa-star" style="color: #FFFD2F"></i>
+            <% end %>
+            <% (5 - flat.rating.to_i).times do %>
+              <i class="fa fa-star" style="color: #E1E1E1"></i>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="form-login">
+          <form action="">
+            <h1 class="text-center">Book this flat</h1>
+            <div class="form-group">
+              <input type="date" class="form-control" placeholder="Check in">
+            </div>
+            <div class="form-group">
+              <input type="date" class="form-control" placeholder="Check out">
+            </div>
+            <input type="submit" value="Let's go !" class="btn btn-danger text-center">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="container">
+
+  </div>
+</div>

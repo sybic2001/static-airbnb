@@ -1,0 +1,68 @@
+seb:
+  owner_name: Sebastien Saunier
+  picture: card-paris.jpg
+  owner_picture: seb.jpg
+  name: Seb's home
+  summary: Charming room in Montmartre
+  city: Paris, France
+  rating: 4
+  amenities:
+    wifi: true
+    kitchen: true
+    kingsizebed: true
+    tv: false
+  flat:
+    size: 28
+    bathroom: 1
+    bedroom: 1
+romain:
+  owner_name: Romain Paillard
+  picture: card-london.jpeg
+  owner_picture: romain.jpg
+  name: Romain's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  rating: 2
+  amenities:
+    wifi: false
+    kitchen: false
+    kingsizebed: true
+    tv: false
+  flat:
+    size: 55
+    bathroom: 1
+    bedroom: 2
+johanna:
+  owner_name: Johanna Navarro
+  picture: card-brussels.jpeg
+  owner_picture: johanna.jpg
+  name: Johanna's home
+  summary: Nice flat in Vanves
+  city: Vanves, France
+  rating: 5
+  amenities:
+    wifi: true
+    kitchen: true
+    kingsizebed: true
+    tv: true
+  flat:
+    size: 90
+    bathroom: 1
+    bedroom: 3
+agathe:
+  owner_name: Agathe Vinson
+  picture: card-nation.jpg
+  owner_picture: agathe.jpg
+  name: Agathe's home
+  summary: Nice flat at Nation
+  city: Paris, France
+  rating: 5
+  amenities:
+    wifi: true
+    kitchen: true
+    kingsizebed: false
+    tv: false
+  flat:
+    size: 55
+    bathroom: 1
+    bedroom: 1

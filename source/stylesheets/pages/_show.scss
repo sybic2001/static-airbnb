@@ -1,0 +1,25 @@
+.wrapper-picture {
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+.flat-summary {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  padding: 30px;
+  p {
+    font-size: 15px;
+  }
+}
+
+.flat-details {
+  margin-left: 20px;
+}
+
+.flat-details h1 {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+
