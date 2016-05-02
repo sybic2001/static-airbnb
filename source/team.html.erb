@@ -1,0 +1,17 @@
+<div class="container text-center padded">
+  <h1>Our team</h1>
+  <ul class="list-inline text-center">
+  <% members = %w(cyrille arthur romain seb anne)%>
+  <% members.each do |member| %>
+    <li>
+      <h2><%=member.capitalize%></h2>
+      <%= image_tag "#{member}.jpg", class: "avatar-very-large" %>
+    </li>
+  <% end %>
+  </ul>
+  <h3 class="padded">
+    <% link_to "#", class: "text-center padded" do %>
+      <i class="fa fa-envelope"></i>&nbsp;Contact us
+    <% end %>
+  </h3>
+</div>

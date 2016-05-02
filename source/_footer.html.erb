@@ -1,0 +1,21 @@
+<% links = { "youtube" => "http://www.youtube.com", "instagram" => "http://www.instagram.com", "facebook" => "http://www.facebook.com", "twitter" => "http://www.twitter.com" } %>
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <ul class="list-inline">
+          <% links.each do |site, url| %>
+            <li>
+              <% link_to "#{url}" do %>
+              <i class="fa fa-<%= site %>"></i>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="col-xs-8 text-right">
+        <p>This is a Airbnb Home challenge @ LeWagon</p>
+      </div>
+    </div>
+  </div>
+</div>
