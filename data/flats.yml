@@ -66,3 +66,20 @@ agathe:
     size: 55
     bathroom: 1
     bedroom: 1
+daphnee:
+  owner_name: Daphnee Yvon
+  picture: montmartre.jpg
+  owner_picture: daphnee.jpg
+  name: Daphnee's home
+  summary: Nice flat at Montmartre
+  city: Paris, France
+  rating: 4
+  amenities:
+    wifi: true
+    kitchen: true
+    kingsizebed: false
+    tv: true
+  space:
+    size: 140
+    bathroom: 3
+    bedroom: 4
