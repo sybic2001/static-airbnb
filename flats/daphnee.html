@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- For Bootstrap responsiveness -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>The Middleman</title>
+
+    <link href="../stylesheets/all.css" rel="stylesheet" />
+    <script src="../javascripts/all.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="flats flats_daphnee">
+
+    <div class="navbar-wagon">
+  <!-- Logo -->
+<a class="navbar-wagon-brand" href="index.html">    <img src="../images/lewagon.png" />
+</a>
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <!-- Search form -->
+    <form action="" class="navbar-wagon-search">
+      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
+      <button type="submit" class="navbar-wagon-search-btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+
+    <!-- Text link -->
+    <a class="navbar-wagon-item navbar-wagon-link" href="http://www.lewagon.com">Wagon</a>
+
+    <!-- Text link -->
+    <a class="navbar-wagon-item navbar-wagon-link" href="team.html">Team</a>
+
+    <!-- Notification link-->
+<a class="navbar-wagon-item navbar-wagon-link" href="">      <div class="badge-container">
+        <i class="fa fa-envelope-o"></i>
+        <div class="badge badge-yellow">3</div>
+      </div>
+</a>
+    <!-- Profile picture and dropdown -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <img src="http://placehold.it/50x50" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="">Profile</a></li>
+          <li><a href="">Dashboard</a></li>
+          <li><a href="">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Button (call-to-action) -->
+    <a class="navbar-wagon-item navbar-wagon-button btn" href="">Post stuff</a>
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="">Some mobile link</a></li>
+        <li><a href="">Some other link</a></li>
+        <li><a href="">Some really different link</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+   <!-- call _navbar.html.erb partial -->
+    
+<div class="wrapper-picture padded" style="background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)), url(../images/montmartre.jpg);">
+</div>
+<div class="wrapper">
+  <div class="container">
+    <div class="row ligne">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-6 colonne">
+        <div class="flat-summary">
+          <div class="flat-owner text-center">
+            <img class="avatar-very-large" src="../images/daphnee.jpg" />
+            <p>Daphnee Yvon</p>
+          </div>
+          <div class="flat-details">
+            <h1>Nice flat at Montmartre</h1>
+            <p>Paris, France</p>
+              <i class="fa fa-star" style="color: #FFFD2F"></i>
+              <i class="fa fa-star" style="color: #FFFD2F"></i>
+              <i class="fa fa-star" style="color: #FFFD2F"></i>
+              <i class="fa fa-star" style="color: #FFFD2F"></i>
+              <i class="fa fa-star" style="color: #E1E1E1"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="form-login">
+          <form action="">
+            <h1 class="text-center">Book this flat</h1>
+            <div class="form-group">
+              <input type="date" class="form-control" placeholder="Check in">
+            </div>
+            <div class="form-group">
+              <input type="date" class="form-control" placeholder="Check out">
+            </div>
+            <div class="form-group">
+              <select class="form-control">
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+              </select>
+            </div>
+            <input type="submit" value="Let's go !" class="btn btn-danger text-center">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper padded" style="background-color: #F4F4F4">
+  <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <p>The space</p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <ul class="list-group">
+            <li class="list-group-item">size : 140</li>
+            <li class="list-group-item">bathroom : 3</li>
+            <li class="list-group-item">bedroom : 4</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <p>The amenities</p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <ul class="list-group">
+              <li class="list-group-item">wifi :  <i class="fa fa-wifi" style="color: #FFC900;"></i></li>
+              <li class="list-group-item">kitchen :  <i class="fa fa-cutlery" style="color: #FFC900;"></i></li>
+              <li class="list-group-item">kingsizebed :  <i class="fa fa-bed" style="color: #D5D5D5;"></i></li>
+              <li class="list-group-item">tv :  <i class="fa fa-television" style="color: #FFC900;"></i></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</div>
+              <!-- Page content is injected here -->
+    <div id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <ul class="list-inline">
+            <li>
+<a href="http://www.youtube.com">              <i class="fa fa-youtube"></i>
+</a>            </li>
+            <li>
+<a href="http://www.instagram.com">              <i class="fa fa-instagram"></i>
+</a>            </li>
+            <li>
+<a href="http://www.facebook.com">              <i class="fa fa-facebook"></i>
+</a>            </li>
+            <li>
+<a href="http://www.twitter.com">              <i class="fa fa-twitter"></i>
+</a>            </li>
+        </ul>
+      </div>
+      <div class="col-xs-8 text-right">
+        <p>This is a Airbnb Home challenge @ LeWagon</p>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- call _footer.html.erb partial -->
+
+  </body>
+</html>
