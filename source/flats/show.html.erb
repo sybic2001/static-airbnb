@@ -1,10 +1,12 @@
+<% match_font = { "kitchen" => "cutlery", "wifi" => "wifi", "kingsizebed" => "bed", "tv" => "television"} %>
+
 <% flat = data.flats[owner] %>
 <div class="wrapper-picture padded" style="background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)), url(<%= image_path(flat.picture)%>);">
 </div>
 <div class="wrapper">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-offset-1 col-sm-6">
+    <div class="row ligne">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-6 colonne">
         <div class="flat-summary">
           <div class="flat-owner text-center">
             <%= image_tag flat.owner_picture, class: "avatar-very-large" %>
@@ -32,6 +34,14 @@
             <div class="form-group">
               <input type="date" class="form-control" placeholder="Check out">
             </div>
+            <div class="form-group">
+              <select class="form-control">
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+              </select>
+            </div>
             <input type="submit" value="Let's go !" class="btn btn-danger text-center">
           </form>
         </div>
@@ -41,6 +51,29 @@
 </div>
 <div class="wrapper">
   <div class="container">
-
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <p>The space</p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <ul class="list-group">
+            <% flat.space.each do |feature, value| %>
+            <li class="list-group-item"><%= "#{feature} : #{value}" %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <p>The amenities</p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <ul class="list-group">
+            <% flat.amenities.each do |feature, value| %>
+              <li class="list-group-item"><%= "#{feature} :  " %><i class="fa fa-<%= match_font[feature] %>" style="color: <%= value ? '#FFC900' : '#D5D5D5'%>;"></i></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
   </div>
 </div>

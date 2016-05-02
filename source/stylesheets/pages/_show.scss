@@ -4,9 +4,17 @@
   height: 40vh;
 }
 
+
+
+.ligne {
+  display: flex;
+  align-items: center;
+}
+
 .flat-summary {
   display: flex;
   align-items: center;
+  height: 100%;
   margin: 20px auto;
   padding: 30px;
   p {
@@ -15,7 +23,7 @@
 }
 
 .flat-details {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .flat-details h1 {

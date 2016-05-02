@@ -11,7 +11,7 @@ seb:
     kitchen: true
     kingsizebed: true
     tv: false
-  flat:
+  space:
     size: 28
     bathroom: 1
     bedroom: 1
@@ -28,7 +28,7 @@ romain:
     kitchen: false
     kingsizebed: true
     tv: false
-  flat:
+  space:
     size: 55
     bathroom: 1
     bedroom: 2
@@ -45,7 +45,7 @@ johanna:
     kitchen: true
     kingsizebed: true
     tv: true
-  flat:
+  space:
     size: 90
     bathroom: 1
     bedroom: 3
@@ -62,7 +62,7 @@ agathe:
     kitchen: true
     kingsizebed: false
     tv: false
-  flat:
+  space:
     size: 55
     bathroom: 1
     bedroom: 1
